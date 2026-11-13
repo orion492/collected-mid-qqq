@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin - Collected Mid QQQ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h2>Collected Mid QQQ</h2>
+    <a href="index.html">Home</a>
+  </header>
+
+  <main class="container">
+    <h1>Admin Panel</h1>
+
+    <section id="loginPanel" class="panel">
+      <h2>Admin Login</h2>
+      <form id="loginForm">
+        <input id="email" type="email"
+          placeholder="Admin Email" required>
+        <input id="password" type="password"
+          placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p id="loginMessage"></p>
+    </section>
+
+    <section id="uploadPanel" class="panel" hidden>
+      <div class="toolbar">
+        <h2>Upload PDF</h2>
+        <button id="logoutBtn" class="secondary">Logout</button>
+      </div>
+
+      <form id="uploadForm">
+        <input id="pdfTitle" type="text"
+          placeholder="PDF Title" required>
+        <textarea id="pdfDescription"
+          placeholder="Description"></textarea>
+        <input id="pdfFile" type="file"
+          accept="application/pdf,.pdf" required>
+        <button type="submit">Upload PDF</button>
+      </form>
+
+      <p id="uploadMessage"></p>
+
+      <h2>Manage Documents</h2>
+      <div id="adminDocuments"></div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+  <script>initAdmin();</script>
+</body>
+</html>
