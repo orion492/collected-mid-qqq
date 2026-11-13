@@ -1,8 +1,8 @@
 
 /* Collected Mid QQQ Configuration */
 
-const SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL";
-const SUPABASE_KEY = "YOUR_SUPABASE_PUBLISHABLE_KEY";
+const SUPABASE_URL = "https://owureefogmrdxkofxlct.supabase.co";
+const SUPABASE_KEY = "sb_publishable_Ux2GFqH7TVaOmYzpio8ssw_MEy3EDFm";
 
 const supabaseClient = window.supabase.createClient(
   SUPABASE_URL,
