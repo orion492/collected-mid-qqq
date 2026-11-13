@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Read PDF - Collected Mid QQQ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h2>Collected Mid QQQ</h2>
+    <a href="index.html">Home</a>
+  </header>
+
+  <main class="container">
+    <h2 id="documentTitle">Loading PDF...</h2>
+    <p id="readerMessage"></p>
+    <div id="pdfPages" class="pdf-pages"></div>
+  </main>
+
+  <div class="watermark" aria-hidden="true">
+    COLLECTED MID QQQ • VIEW ONLY
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="app.js"></script>
+  <script>initReader();</script>
+</body>
+</html>
